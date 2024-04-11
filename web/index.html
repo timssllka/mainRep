@@ -4,6 +4,41 @@
 
     </head>
     <body>
-        
+        <script>
+            var name ="John";
+            let age = 24;
+            const PI=3.1415926535;
+
+            let message="hello world!";//строка
+            let person ={
+                name:"Tima",
+                age:19,
+            } //обЪект
+            let str = "<h2>HEllo world</h2>";
+            for(let i =0; i<10;i++){
+                str+="<div>"+great("БОБ:"+i)+"</div>";
+                
+            }
+            //Манипуляции с массивами 
+            let fruits =["apple", "banana", "orange"];//массив строк / фрукты
+            fruits.push("grape");//добавление фрукта
+            fruits.pop();//удаление элемента
+            fruits[0]="apple1";//изменение элемента
+
+            //вывод фруктов 
+            str+="<div>"
+            for(let i=0;i<fruits.length;i++){
+                str+= "<li>"+fruits[i]+"</li>";
+            }
+            str+="</div>"
+
+
+            function great(name){
+                return "Привет "+name;
+            }
+
+            document.write(str);
+
+        </script>
     </body>
 </html>
